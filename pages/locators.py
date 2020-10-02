@@ -8,4 +8,4 @@ class MainPageLocators():
 class LoginPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     FORM_LOGIN = (By.CSS_SELECTOR, "#login_form")
-    FORM_REGISTER = (By.CSS_SELECTOR, "#register_form")
+    FORM_REGISTER = (By.CSS_SELECTOR, "#1register_form")
