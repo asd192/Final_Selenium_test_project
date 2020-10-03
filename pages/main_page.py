@@ -17,6 +17,5 @@ from .login_page import LoginPage
 #         assert self.is_element_present(*MainPageLocators.LOGIN_LINK), "Login link is not presented"
 
 class MainPage(BasePage):
-    pass
-    # def __init__(self, *args, **kwargs):
-    #     super(MainPage, self).__init__(*args, **kwargs)
+    def __init__(self, *args, **kwargs):
+        super(MainPage, self).__init__(*args, **kwargs)

@@ -20,10 +20,12 @@ class ProductPage(BasePage):
             "The cost of the basket does not match the cost of the product"
 
     def should_not_be_success_message(self):
+        """упадет, как только увидит искомый элемент"""
         assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
             "Success message is presented, but should not be"
 
     def checks_that_the_element_disappears(self):
+        """будет ждать до тех пор, пока элемент не исчезнет"""
         assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
             "The element did not disappear, but should"
 
