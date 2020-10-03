@@ -7,7 +7,7 @@ from .pages.basket_page import BasketPage
 link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=newYear2019"
 
 
-@pytest.mark.skip(reason="this test crashes intentionally")
+@pytest.mark.skip(reason="I can't finish it, it was late and I wanted to sleep.")
 class TestUserAddToBasketFromProductPage():
     @pytest.mark.need_review
     def test_user_cant_see_success_message(browser):
