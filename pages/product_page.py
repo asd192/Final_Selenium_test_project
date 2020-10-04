@@ -60,12 +60,6 @@ class ProductPage(BasePage):
         assert self.is_disappeared(
             *BasketPageLocators.ADD_TO_BASKET_MESSAGE), "Added to cart message not disappeared"
 
-
-
-
-
-
-
     def add_product_to_basket(self):
         self.is_element_present(*ProductPageLocators.ADD_TO_BASKET_BUTTON)
 

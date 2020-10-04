@@ -31,16 +31,19 @@ class ProductPageLocators():
     MASSAGE_ABOUT_SUCCESS_ADD_TO_BUSKED = (By.CSS_SELECTOR, '#messages>.alert:nth-child(1)>.alertinner>strong')
     MASSAGE_ABOUT_BUSKED_PRICE = (By.CSS_SELECTOR, '.alert-info>.alertinner>p>strong')
 
+
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
+
 class BasketPageLocators():
     BASKET_PRODUCTS = (By.XPATH, '//*[@id="content_inner"]/div[1]/div/h2')
     BASKET_MESSAGE = (By.XPATH, '//*[@id="content_inner"]/p/a')
     ADD_TO_BASKET_MESSAGE = (By.CSS_SELECTOR, '#messages > div:nth-child(1)')
-    BASKET_COST = (By.CSS_SELECTOR, '#messages > div.alert.alert-safe.alert-noicon.alert-info.fade.in > div > p:nth-child(1) strong')
+    BASKET_COST = (
+    By.CSS_SELECTOR, '#messages > div.alert.alert-safe.alert-noicon.alert-info.fade.in > div > p:nth-child(1) strong')
     BOOK_NAME_IN_MESSAGE = (By.CSS_SELECTOR, '#messages > div:nth-child(1) > div > strong')
     ADD_TO_BASKET_BUTTON = (By.CSS_SELECTOR, '#add_to_basket_form > button')
     BOOK_PRICE = (By.CSS_SELECTOR, '#content_inner > article > div.row > div.col-sm-6.product_main > p.price_color')

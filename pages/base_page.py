@@ -68,7 +68,7 @@ class BasePage():
 
     def should_be_login_link(self):
         """переход на страницу авторизации"""
-        assert self.is_element_present(*BasePageLocators.LOGIN_LINK),\
+        assert self.is_element_present(*BasePageLocators.LOGIN_LINK), \
             "Login link is not presented"
 
     def go_to_basket(self):
