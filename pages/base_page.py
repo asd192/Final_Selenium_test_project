@@ -80,3 +80,9 @@ class BasePage():
         """проверка, что user залогинен"""
         assert self.is_element_present(*BasePageLocators.USER_ICON), "User icon is not presented," \
                                                                      " probably unauthorised user"
+
+    def get_text_from_element(self, how, what):
+        WebDriverWait(self.browser, 5).until(
+            EC.presence_of_element_located((how, what))
+        )
+        return self.browser.find_element(how, what).text
